@@ -1,7 +1,9 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import Header from "../Header/Header";
 
 const Home = () => {
+  const navigation = useNavigation();
+
   return (
     <div className="container mx-auto">
       <h1 className="bg-orange-400 text-center text-2xl">
@@ -10,7 +12,7 @@ const Home = () => {
 
       <div className="mt-5">
         <Header />
-        <Outlet />
+        {navigation.state === "loading" ? <p>Loading...</p> : <Outlet />}
       </div>
     </div>
   );

@@ -1,18 +1,18 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
       <nav>
         <ul className="flex items-center justify-center gap-4 ">
-          <li className="bg-green-600 px-4 py-2 rounded-lg">
-            <Link to="/">Home</Link>
+          <li className="rounded-lg bg-green-600 px-4 py-2">
+            <NavLink to="/">Home</NavLink>
           </li>
-          <li className="bg-green-600 px-4 py-2 rounded-lg">
-            <Link to="/users">Users</Link>
+          <li className="rounded-lg bg-green-600 px-4 py-2">
+            <NavLink to="/users">Users</NavLink>
           </li>
-          <li className="bg-green-600 px-4 py-2 rounded-lg">
-            <Link to="/about">About</Link>
+          <li className="rounded-lg bg-green-600 px-4 py-2">
+            <NavLink to="/about">About</NavLink>
           </li>
         </ul>
       </nav>
