@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 const Home = () => {
   return (
     <div className="container mx-auto">
-      <h1 className="text-2xl bg-orange-400 text-center">
+      <h1 className="bg-orange-400 text-center text-2xl">
         Use loader for collect data and easy to using example :
       </h1>
 
