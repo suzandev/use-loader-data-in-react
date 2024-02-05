@@ -14,11 +14,6 @@ const User = ({ user }) => {
       <p>user email: {email}</p>
       <p>phone number: {phone}</p>
       <Link to={`/user/${id}`}>Show Details</Link>
-      {/* <Link to={`/user/${id}`}>
-        <button className="rounded-lg bg-black px-4 py-2 text-white ">
-          Click me
-        </button>
-      </Link> */}
 
       <button
         onClick={handleShowDetails}
